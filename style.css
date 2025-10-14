@@ -1,0 +1,389 @@
+:root {
+  --clr-accent-400: hsl(217, 88%, 59%);
+  --clr-accent-100: hsl(13, 100%, 96%);
+
+  --clr-primary-400: hsl(226, 72%, 40%);
+
+  --clr-neutral-900: hsl(213, 68%, 42%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --ff-primary: 'Be Vietnam Pro', sans-serif;
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --fs-300: 0.8125rem;
+  --fs-400: 0.875rem;
+  --fs-500: 0.937rem;
+  --fs-600: 1rem;
+  --fs-700: 1.875rem;
+  --fs-800: 2.5rem;
+  --fs-900: 3.5rem;
+
+  --fs-body: var(--fs-400);
+  --fs-primary-heading: var(--fs-800);
+  --fs-secondary-heading: var(--fs-700);
+  --fs-nav: var(--fs-500);
+  --fs-button: var(--fs-300);
+
+  --header-height: 150px;
+}
+
+@media (min-width: 50em) {
+  :root {
+    --fs-body: var(--fs-500);
+    --fs-primary-heading: var(--fs-900);
+    --fs-secondary-heading: var(--fs-800);
+    --fs-nav: var(--fs-300);
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+*{
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Header Structure */
+.primary-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Top Navigation Bar */
+.top-nav-bar {
+  background: var(--clr-neutral-900);
+  padding: 0.5rem 0;
+}
+
+.secondary-navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.secondary-navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: var(--fs-300);
+  transition: opacity 0.3s ease;
+}
+
+.secondary-navigation a:hover {
+  opacity: 0.8;
+}
+
+/* Main Header */
+.main-header {
+  padding: 1rem 0;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-header img {
+  height: 80px;
+  width: auto;
+}
+
+/* Primary Navigation - Horizontal */
+.primary-navigation ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.primary-navigation li {
+  margin: 0;
+}
+
+.primary-navigation > ul > li > a {
+  text-decoration: none;
+  color: var(--clr-primary-400);
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-nav);
+  transition: color 0.3s ease;
+}
+
+.primary-navigation > ul > li > a:hover {
+  color: var(--clr-accent-400);
+}
+/*Home Button*/
+.home-icon {
+  color: var(--clr-accent-100);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.home-icon:hover {
+  color: var(--clr-primary-400);
+  transform: scale(1.1);
+}
+
+
+/* Dropdown Menu Styles - VERTICAL */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none !important;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  list-style: none;
+  z-index: 1000;
+}
+
+.dropdown.active .dropdown-menu {
+  display: block !important;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.dropdown-toggle::after {
+  content: ' \25BE';
+  font-size: 0.8em;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Add padding to body so content doesn't hide behind fixed header */
+body {
+  padding-top: var(--header-height);
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
+  color: var(--clr-primary-400);
+}
+
+/* Remove all animations for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility classes */
+.text-primary-400{
+  color: var(--clr-primary-400)
+}
+.text-accent-400{
+  color: var(--clr-accent-400)
+}
+.text-accent-100{
+  color: var(--clr-accent-100)
+}
+.text-neutral-100{
+  color: var(--clr-neutral-100)
+}
+.text-neutral-900{
+  color: var(--clr-neutral-900)
+}
+.bg-primary-400{
+  background-color: var(--clr-primary-400)
+}
+.bg-accent-400{
+  background-color: var(--clr-accent-400)
+}
+.bg-accent-100{
+  background-color: var(--clr-accent-100)
+}
+.bg-neutral-100{
+  background-color: var(--clr-neutral-100)
+}
+.bg-neutral-900{
+  background-color: var(--clr-neutral-900)
+}
+.fw-bold { font-weight: var(--fw-bold); }
+.fw-semi-bold { font-weight: var(--fw-semi-bold); }
+.fw-regular { font-weight: var(--fw-regular); }
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+.fs-300 {font-size: var(--fs-300)}
+.fs-400 {font-size: var(--fs-400)}
+.fs-500 {font-size: var(--fs-500)}
+.fs-600 {font-size: var(--fs-600)}
+
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - var(--padding));
+  margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+/* Image Carousel Styles */
+.image-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.carousel-images {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-image {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-image.active {
+  display: block;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-arrow:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.carousel-arrow.prev {
+  left: -40px;
+}
+
+.carousel-arrow.next {
+  right: -40px;
+}
+
+.carousel-dots {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: var(--clr-primary-400);
+}

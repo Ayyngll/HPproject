@@ -1,0 +1,43 @@
+<svg viewBox="0 0 200 53" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo Symbol - Abstract combination of lightbulb and molecular structure -->
+  <g id="logo-symbol" transform="scale(0.67)">
+    <!-- Central circle (atom nucleus/lightbulb base) -->
+    <circle cx="40" cy="40" r="4" fill="#2563eb" opacity="0.9"/>
+    
+    <!-- Orbital paths/light rays -->
+    <ellipse cx="40" cy="40" rx="10" ry="6" fill="none" stroke="#60a5fa" stroke-width="1" transform="rotate(45 40 40)"/>
+    <ellipse cx="40" cy="40" rx="10" ry="6" fill="none" stroke="#93c5fd" stroke-width="1" transform="rotate(-45 40 40)"/>
+    
+    <!-- Electrons/nodes -->
+    <circle cx="34" cy="34" r="2" fill="#3b82f6"/>
+    <circle cx="46" cy="34" r="2" fill="#3b82f6"/>
+    <circle cx="46" cy="46" r="2" fill="#3b82f6"/>
+    <circle cx="34" cy="46" r="2" fill="#3b82f6"/>
+    
+    <!-- Connecting lines (molecular bonds) -->
+    <line x1="34" y1="34" x2="40" y2="40" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="46" y1="34" x2="40" y2="40" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="46" y1="46" x2="40" y2="40" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="34" y1="46" x2="40" y2="40" stroke="#60a5fa" stroke-width="1"/>
+    
+    <!-- Light rays (representing bright/illumination) -->
+    <line x1="40" y1="29" x2="40" y2="25" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="48" y1="32" x2="51" y2="29" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="48" y1="48" x2="51" y2="51" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="32" y1="48" x2="29" y2="51" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="32" y1="32" x2="29" y2="29" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Logo Text -->
+  <g id="logo-text" transform="translate(12, 12) scale(0.33)">
+    <!-- BrightPath text -->
+    <text x="85" y="48" font-family="Arial, sans-serif" font-size="32" font-weight="600" fill="#1e40af">
+      Bright<tspan fill="#2563eb" font-weight="700">Path</tspan>
+    </text>
+    
+    <!-- Tagline (optional - can be removed for even more minimalism) -->
+    <text x="85" y="65" font-family="Arial, sans-serif" font-size="10" fill="#64748b" letter-spacing="0.5">
+      STEM EDUCATION COMMUNITY
+    </text>
+  </g>
+</svg>

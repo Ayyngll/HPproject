@@ -2,36 +2,209 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="logo/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro;wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="primary-header">
-      <div class="container"> 
-        <a href="#"><img src="images/logo.svg" alt="Welcome">
-        <nav class="primary-navigation">
-          <ul role ="list" class="">
-            <li><a href="#">Opportunites</a></li>
-            <li><a href="#"></a>Programs</li>
-            <li><a href="#"></a>Community</li>
-            <li><a href="#"></a>Counslors</li>
-            <li><a href="#"></a>Stories</li>
-          </ul>
-        </nav>
-        <button class="button">Get Started</button>
+
+      <!-- Top Navigation Bar -->
+      <div class="top-nav-bar">
+        <div class="container">
+          <nav class="secondary-navigation">
+            <ul role="list">
+              <li><a href="https://forms.gle/wiir6u4K9ygLz46d7">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Main Header -->
+      <div class="main-header">
+        <div class="container">
+          <a href="#"><img src="images/brightpath-logo.svg" alt="BrightPath Logo"></a>
+          
+          <nav class="primary-navigation">
+            <ul role="list">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Opportunities</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#scholarships">Scholarships</a></li>
+                  <li><a href="#competitions">Competitions</a></li>
+                  <li><a href="#research">Research Opportunities</a></li>
+                  <li><a href="#summer-programs">Summer Programs</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Programs</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#stem-programs">STEM Programs</a></li>
+                  <li><a href="#mentorship">Mentorship</a></li>
+                  <li><a href="#workshops">Workshops</a></li>
+                  <li><a href="#internships">Internships</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Community</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#forums">Forums</a></li>
+                  <li><a href="#events">Events</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#connect">Connect</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Counselors</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#find-counselor">Find a Counselor</a></li>
+                  <li><a href="#career-advice">Career Advice</a></li>
+                  <li><a href="#college-prep">College Prep</a></li>
+                  <li><a href="#resources">Resources</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Stories</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#student-stories">Student Stories</a></li>
+                  <li><a href="#success-stories">Success Stories</a></li>
+                  <li><a href="#testimonials">Testimonials</a></li>
+                  <li><a href="#featured">Featured</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">About</a>
+                <ul class="dropdown-menu">
+                  <li><a href="background.html">Background</a></li>
+                  <li><a href="vision.html">Vision</a></li>
+                  <li><a href="mission.html">Mission</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
       </div>
     </header>
 
     <main>
+      <section>
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <h1 class="fs-primary-heading fw-bold"> Bringing students closer to 
+                STEM one step at a time. </h1>
+                <p>BrightPath brings an inclusive environment for students of all ages trying to find their STEM field career path</p>
+                <button class="button">Get Started</button>
+            </div>
+            <div>
+              <button class="carousel-arrow prev" aria-label="Previous image">‹</button>
+              <div class="carousel-images">
+                <img src="images/icon-hamburger.svg" alt="STEM Education" class="carousel-image active">
+                <img src="images/icon-hamburger.svg" alt="Student Success" class="carousel-image">
+                <img src="images/icon-hamburger.svg" alt="Community" class="carousel-image">
+              </div>
+              <button class="carousel-arrow next" aria-label="Next image">›</button>
+              <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section>
+        <div class="container">
+          <div class="even-column">
+            <div>
+              <h2 class="fs-secondary-heading fw-bold">What does BrightPath do?</h2>
+              <p> BrightPath provides students with the opportunity to </p>
+            </div>
+            <div>
+              <ul class="numbered-items" role="list">
+                <li><h3 class="fs-600 fw-bold">A</h3>
+                <p>a</p>
+                </li>
+                <li><h3 class="fs-600 fw-bold">B</h3>
+                <p>b</p>
+                </li>
+                <li><h3 class="fs-600 fw-bold">C</h3>
+                <p>c</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="carousel">
+        <h2 class="fs-secondary-heading"> what is being said </h2>
+        <!-- Carousel here-->
+        <button class="button"> Get started</button>
+      </section>
+
+      <section class="cta | bg-accent-400 text-neutral-100">
+        <div class="container">
+          <div class="even-column">
+            <div><p class="secondary-heading fw-bold"> Plan for the future.</p></div>
+              <div>
+                <button class="button" data-type="inverted">Get Started</button>
+              </div>
+          </div>
+        </div>  
+      </section>
     </main>
+
+    <footer class="bg-neutral-900 text-neutral-100">
+      <div class="container">
+        <div class="even-coulumns">
+          <div></div>
+          <div>
+            <nav class="footer-nav">
+              <ul aria-label="Footer" role="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <form action="">
+              <input type="email"><button class="button"></button>
+              <p>Copyright 2025. All Reserved Rights</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="/src/main.js"></script>
   </body>
 
+  <div class="slider-container">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <h2>75%</h2>
+            <p>Students Found a STEM Mentor</p>
+        </div>
+        <div class="slide">
+            <h2>30+</h2>
+            <p>Weekly Study Groups Available</p>
+        </div>
+        <div class="slide">
+            <h2>New!</h2>
+            <p>Coding Bootcamp Registration Open</p>
+        </div>
+    </div>
+    <button class="prev-button">‹</button>
+    <button class="next-button">›</button>
+</div>
 </html>
